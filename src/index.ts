@@ -6,6 +6,10 @@ if (require('electron-squirrel-startup')) { // eslint-disable-line global-requir
     app.quit();
 }
 
+require('electron-reload')(__dirname, {
+    electron: require(`../node_modules/electron`)
+});
+
 function createWindow(): void {
     // Create the browser window.
     const mainWindow = new BrowserWindow({
