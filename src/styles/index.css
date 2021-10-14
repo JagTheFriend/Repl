@@ -43,3 +43,15 @@ textarea {
     cursor: pointer;
     border-color: #0d6efd;
 }
+
+.btn {
+    width: 100px;
+}
+
+.center {
+    position: fixed;
+    margin: auto;
+    left: 0;
+    right: 3px;
+    top: 0;
+}
