@@ -13,7 +13,7 @@ textarea {
     width: 100px;
 }
 
-.btn-run-code {
+.btn-run-code, .dropdown-menu {
     width: 160px;
     text-align: center;
     vertical-align: middle;
