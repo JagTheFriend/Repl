@@ -16,20 +16,41 @@
 
 <body>
     <table class="table">
-        <thead>
-            <tr>
-                <th scope="col">Input:</th>
-                <th scope="col">Output:</th>
-            </tr>
-        </thead>
         <tbody>
             <tr>
+                <td class="btn-run-code">
+                    <button type="button" class="btn btn-outline-primary btn-run">
+                        Run
+                    </button>
+                </td>
+                <td class="btn-run-code">
+                    <!-- Example single danger button -->
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Action
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+            <tr>
                 <td>
-                    <textarea rows="25" class="form-control inputCode" type="text" id="inputCode">
+                    <textarea rows="25" class="form-control inputCode" type="text" id="inputCode"
+                        placeholder="Please enter your code:">
                     </textarea>
                 </td>
                 <td>
-                    <textarea rows="25" class="form-control outputCode" type="text" id="outputCode" disabled readonly>
+                    <textarea rows="25" class="form-control outputCode" type="text" id="outputCode"
+                        value="The output of running your code" disabled readonly>
                     </textarea>
                 </td>
             </tr>
@@ -42,4 +63,5 @@
         document.getElementById("inputCode").value = "";
     })();
 </script>
+
 </html>

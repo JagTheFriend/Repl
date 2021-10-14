@@ -8,3 +8,13 @@ body {
 textarea {
     resize: none;
 }
+
+.btn-run {
+    width: 100px;
+}
+
+.btn-run-code {
+    width: 160px;
+    text-align: center;
+    vertical-align: middle;
+}
