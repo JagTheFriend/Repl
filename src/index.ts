@@ -13,22 +13,21 @@ require('electron-reload')(__dirname, {
 function createWindow(): void {
     // Create the browser window.
     const mainWindow = new BrowserWindow({
-        height: 600,
-        width: 800,
         show: false,
+        autoHideMenuBar: true,
         webPreferences: {
             preload: __dirname + "/preload.js"
         }
     });
 
+    mainWindow.maximize();
     // and load the index.html of the app.
     mainWindow.loadFile(path.join(__dirname, '../src/index.html'));
-
     // open the window when everything is ready
     mainWindow.on("ready-to-show", () => mainWindow.show());
 
     // Open the DevTools.
-    mainWindow.webContents.openDevTools();
+    // mainWindow.webContents.openDevTools();
 };
 
 // This method will be called when Electron has finished
