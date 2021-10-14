@@ -28,18 +28,12 @@
                     </button>
                 </td>
                 <td class="btn-run-code">
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-success">Action</button>
-                        <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            <span class="visually-hidden">Toggle Dropdown</span>
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item">Python</a></li>
-                            <li><a class="dropdown-item">JavaScript</a></li>
-                            <li><a class="dropdown-item">Java</a></li>
-                        </ul>
-                    </div>
+                    <label for="languages">Choose a language:&nbsp;</label>
+                    <select name="languages" id="languages" class="languages">
+                        <option value="python">Python</option>
+                        <option value="javascript">JavaScript</option>
+                        <option value="java">Java</option>
+                    </select>
                 </td>
             </tr>
             <tr>
