@@ -19,13 +19,11 @@
 </head>
 
 <body>
-    <button type="button" class="btn btn-primary center" data-bs-toggle="button" autocomplete="off">Run</button>
-    <br>
     <table class="table">
         <tbody>
             <tr>
                 <td class="btn-run-code">
-                    <button type="button" class="btn btn-outline-primary btn-run">
+                    <button type="button" id="runButton" class="btn btn-outline-primary btn-run">
                         Run
                     </button>
                 </td>
@@ -40,12 +38,12 @@
             </tr>
             <tr>
                 <td>
-                    <textarea rows="25" class="form-control inputCode" type="text" id="inputCode"
+                    <textarea id="inputCode" rows="25" class="form-control inputCode" type="text" id="inputCode"
                         placeholder="Please enter your code:">
                     </textarea>
                 </td>
                 <td>
-                    <textarea rows="25" class="form-control outputCode" type="text" id="outputCode"
+                    <textarea id="outputCode" rows="25" class="form-control outputCode" type="text" id="outputCode"
                         value="The output of running your code" disabled readonly>
                     </textarea>
                 </td>
