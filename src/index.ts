@@ -14,10 +14,7 @@ function createWindow(): void {
     // Create the browser window.
     const mainWindow = new BrowserWindow({
         show: false,
-        autoHideMenuBar: true,
-        webPreferences: {
-            preload: __dirname + "/preload.js"
-        }
+        autoHideMenuBar: true
     });
 
     mainWindow.maximize();
